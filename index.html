@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My CV</title>
+</head>
+<body>
+    <div class="wrapper">
+    <header>
+        <div class="header_container">
+            <h1 class="title">Curriculum Vitae</h1>
+            <svg class="nav_svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M2 11H22V13H2zM2 5H22V7H2zM2 17H22V19H2z"/></svg>
+            <div class="navigation">
+                <a href="#bio_id" class="inner_link">BIO</a>
+                <a href="#skillbar_id" class="inner_link">SKILLS</a>
+                <a href="#edu_id" class="inner_link">EDUCATION</a>
+                <a href="#project_id" class="inner_link">PROJECTS</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="title_sub" id="bio_id">BIO</h2>
+        <div class="container bio_container">
+            <ul class="bio_content">
+                <li class="bio_content_item"><span>First / last name: </span>Daria Romanova</li>
+                <li class="bio_content_item"><span>Position wanted: </span>Junior Front-End Developer</li>
+                <li class="bio_content_item"><span>Phone / email: </span>8 (915) 204-15-79 / d.e.romanova@mail.ru</li>
+                <li class="bio_content_item"><span>Additional info: </span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque enim ipsa inventore! Ab, consectetur, quam deleniti asperiores expedita aspernatur eligendi nesciunt explicabo aperiam atque voluptate! Ad itaque odio cumque corporis.
+                Saepe unde dolorem sapiente! Similique natus ipsam consectetur, maxime in dolorum dolores temporibus odio laboriosam laborum corporis maiores error sit eligendi ex molestiae ea quibusdam id possimus est voluptatibus explicabo?
+                </p></li>
+            </ul>
+            <img class="bio_img" src="images/Dasha_009.jpg" alt="My photo" title="Me: thinking of JS :)">
+        </div>
+
+        <h2 class="title_sub" id="skillbar_id">SKILLS</h2>
+        <div class="container skillbar_container">
+            <p>HTML</p>
+            <div class="skills_item">
+            <div class="skills html">90%</div>
+            </div>
+
+            <p>CSS</p>
+            <div class="skills_item">
+            <div class="skills css">80%</div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="skills_item">
+            <div class="skills js">65%</div>
+            </div>
+
+            <p>Python</p>
+            <div class="skills_item">
+            <div class="skills php">60%</div>
+            </div>
+        </div>
+
+        <h2 class="title_sub" id="edu_id">EDUCATION</h2>
+        <div class="container edu_container">
+            <ul class="edu_content">
+                <li class="edu_content_item">
+                    <button type="button" class="collapsible"> <span>Skillbox (2021-2022): </span> Fullstack Developer on Python (15 months)</button>
+                    <div class="edu_courses">
+                      <p>Python</p>
+                      <p>Django</p>
+                      <p>JS</p>
+                      <p>JS. React</p>
+                      <p>CSS/HTML</p>
+                    </div> 
+                </li>
+                <li class="edu_content_item">
+                    <button type="button" class="collapsible"> <span>GeekBrains (2021-2022): </span> Fullstack Developer (18 months)</button>
+                    <div class="edu_courses">
+                      <p>CSS/HTML</p>
+                      <p>JS</p>
+                      <p>JS. React</p>
+                      <p>PHP</p>
+                    </div> 
+                </li>
+            </ul>
+
+            <div class="container carousel_container">
+                <svg class="carousel_arrow" id="left_btn" width="14" height="21" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.99512 2L3.99512 7L8.99512 12L7.99512 14L0.995117 7L7.99512 0L8.99512 2Z" />
+                </svg>
+                <img class="carousel_img" id="img_container" src="" alt="diplomas">
+                <svg class="carousel_arrow" id="right_btn" width="14" height="21" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z" />
+                    </svg>
+            </div>
+        </div>
+
+        <h2 class="title_sub" id="project_id">MY PROJECTS</h2>
+        <div class="container project_container">
+            <a class="project_link" href="https://github.com/arahnaaurum/News_Portal" target="_blank"><span>News Portal</span>: Django project</a>
+            <a class="project_link" href="https://github.com/arahnaaurum/chatapp" target="_blank"><span>Chat application</span>: private/public chat rooms on Django + WebSocket</a>
+            <a class="project_link" href="https://github.com/arahnaaurum/JavaS/tree/main/public" target="_blank"><span>Online store</span>: HTTP/CSS + JS (Vue)</a>
+        </div>
+    </main>
+    </div>
+
+    <footer>
+        <ul class="footer_container"> <span>Contacts:</span>
+            <li><svg class="footer_icon" width="21.854px" height="21.854px" viewBox="0 0 21.854 21.854" style="enable-background:new 0 0 21.854 21.854;" xml:space="preserve">
+
+                <path d="M12.915,16.32c-1.3-0.685-2.755-1.715-4.21-3.168c-1.456-1.457-2.487-2.914-3.171-4.216l1.127-3.026l-3.799-5.91
+                    L1.61,1.254l0.001,0.003C1.603,1.266,1.593,1.271,1.583,1.282c-3.158,3.157-1.457,9.621,3.957,15.035
+                    c5.414,5.413,11.877,7.113,15.036,3.957c0.009-0.01,0.016-0.02,0.024-0.029l1.252-1.254l-5.908-3.799L12.915,16.32z"/>
+                <path d="M20.101,11.375h1.75C21.851,5.104,16.749,0,10.477,0v1.75C15.784,1.75,20.101,6.069,20.101,11.375z"/>
+                <path d="M16.601,11.375h1.75c0-4.343-3.531-7.875-7.875-7.875v1.75C13.853,5.25,16.601,7.998,16.601,11.375z"/>
+                <path d="M13.101,11.375h1.75C14.851,8.962,12.888,7,10.477,7v1.75C11.925,8.75,13.101,9.928,13.101,11.375z"/>
+        </svg>
+        8(915)204-15-79
+        </li>
+            <li>
+                <svg class="footer_icon" width="21.854px" height="21.854px" viewBox="0 0 300.412 300.412" style="enable-background:new 0 0 300.412 300.412;" xml:space="preserve">
+                <path d="M271.262,50.041H29.15C13.153,50.041,0,63.01,0,79.191v142.03c0,16.01,13.022,29.15,29.15,29.15h242.112
+                    c16.137,0,29.15-13.152,29.15-29.15V79.191C300.412,62.995,287.246,50.041,271.262,50.041z M265.583,65.94l-115.377,74.791
+                    L34.831,65.94H265.583z M15.9,79.191c0-2.011,0.455-3.962,1.303-5.728l72.173,46.785L15.9,218.513V79.191z M271.262,234.471H29.15
+                    c-1.648,0-3.221-0.317-4.679-0.869l78.277-104.686l43.134,27.961c2.632,1.706,6.019,1.704,8.65,0l43.133-27.961l78.277,104.686
+                    C274.484,234.155,272.911,234.471,271.262,234.471z M284.512,218.513l-73.476-98.265l72.173-46.785
+                    c0.848,1.766,1.303,3.717,1.303,5.728V218.513z"/>
+            </svg>
+        d.e.romanova@mail.ru
+        </li>
+        </ul>
+    </footer>
+<script src="scripts.js"></script> 
+</body>
+</html>
